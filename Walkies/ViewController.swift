@@ -8,7 +8,11 @@
 import UIKit
 import AVFoundation
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, AVAudioPlayerDelegate {
+    
+    // This time, we'll declare avPlayer as an instance variable,
+      // which means it exists as long as our view controller exists.
+      var avPlayer: AVAudioPlayer!
     
     lazy var walkiesButton: WalkButton = {
         let walkiesButton = WalkButton()
@@ -20,6 +24,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        setupAudio()
         
         self.walkiesButton.addTarget(self, action: #selector(didTapWalkies), for: .touchUpInside)
         
@@ -37,18 +42,28 @@ class ViewController: UIViewController {
         NSLayoutConstraint.activate(constraints)
     }
     
+    private func setupAudio() {
+        let session = AVAudioSession.sharedInstance()
+        
+        do {
+            try session.setCategory(.playback)
+            try session.setActive(true)
+        } catch let error as NSError {
+            print("Unable to activate audio session:  \(error.localizedDescription)")
+        }
+    }
+    
     @objc private func didTapWalkies() {
         let audioFileURL = URL(fileURLWithPath: Bundle.main.path(forResource: randomAudioFile(), ofType: "mp3")!)
         
         do {
-            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
-            try AVAudioSession.sharedInstance().setActive(true)
-            let player = try AVAudioPlayer(contentsOf: audioFileURL, fileTypeHint: AVFileType.m4a.rawValue)
-            player.play()
-            print("PLAYING::::: \(audioFileURL)")
+            avPlayer = try AVAudioPlayer(contentsOf: audioFileURL)
+            avPlayer.delegate = self
+            avPlayer.prepareToPlay()
+            avPlayer.play()
         }
-        catch let error {
-            print(error.localizedDescription)
+        catch {
+            print("error playing")
         }
     }
     
