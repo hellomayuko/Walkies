@@ -19,9 +19,11 @@
 		2C244A29251BF83F0044268C /* walkies_now.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2C244A24251BF83F0044268C /* walkies_now.mp3 */; };
 		2C244A2A251BF83F0044268C /* walkies_please.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2C244A25251BF83F0044268C /* walkies_please.mp3 */; };
 		2C244A2B251BF83F0044268C /* wheres_my_walkies.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2C244A26251BF83F0044268C /* wheres_my_walkies.mp3 */; };
+		C48325013D2EA7590A1D56EE /* Pods_Walkies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAB5C5C2ED550F236B4DAF69 /* Pods_Walkies.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2415E39A83DF3158AFD85EAD /* Pods-Walkies.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Walkies.release.xcconfig"; path = "Target Support Files/Pods-Walkies/Pods-Walkies.release.xcconfig"; sourceTree = "<group>"; };
 		2C1C99CA251BBF6900626DE4 /* Walkies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Walkies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C1C99CD251BBF6900626DE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C1C99CF251BBF6900626DE4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +38,8 @@
 		2C244A24251BF83F0044268C /* walkies_now.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = walkies_now.mp3; sourceTree = "<group>"; };
 		2C244A25251BF83F0044268C /* walkies_please.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = walkies_please.mp3; sourceTree = "<group>"; };
 		2C244A26251BF83F0044268C /* wheres_my_walkies.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wheres_my_walkies.mp3; sourceTree = "<group>"; };
+		6ECB8FF37D96D01884CC5B70 /* Pods-Walkies.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Walkies.debug.xcconfig"; path = "Target Support Files/Pods-Walkies/Pods-Walkies.debug.xcconfig"; sourceTree = "<group>"; };
+		AAB5C5C2ED550F236B4DAF69 /* Pods_Walkies.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Walkies.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C48325013D2EA7590A1D56EE /* Pods_Walkies.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +59,8 @@
 			children = (
 				2C1C99CC251BBF6900626DE4 /* Walkies */,
 				2C1C99CB251BBF6900626DE4 /* Products */,
+				F49EB1171EECE92214144458 /* Pods */,
+				316D602BC4EF58029554ECA2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -93,6 +100,24 @@
 			path = Audio;
 			sourceTree = "<group>";
 		};
+		316D602BC4EF58029554ECA2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AAB5C5C2ED550F236B4DAF69 /* Pods_Walkies.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F49EB1171EECE92214144458 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6ECB8FF37D96D01884CC5B70 /* Pods-Walkies.debug.xcconfig */,
+				2415E39A83DF3158AFD85EAD /* Pods-Walkies.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -100,6 +125,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2C1C99DE251BBF6A00626DE4 /* Build configuration list for PBXNativeTarget "Walkies" */;
 			buildPhases = (
+				CB6862CB8C4CCA9C1C87BA4E /* [CP] Check Pods Manifest.lock */,
 				2C1C99C6251BBF6900626DE4 /* Sources */,
 				2C1C99C7251BBF6900626DE4 /* Frameworks */,
 				2C1C99C8251BBF6900626DE4 /* Resources */,
@@ -162,6 +188,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CB6862CB8C4CCA9C1C87BA4E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Walkies-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2C1C99C6251BBF6900626DE4 /* Sources */ = {
@@ -315,6 +366,7 @@
 		};
 		2C1C99DF251BBF6A00626DE4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6ECB8FF37D96D01884CC5B70 /* Pods-Walkies.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -334,6 +386,7 @@
 		};
 		2C1C99E0251BBF6A00626DE4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2415E39A83DF3158AFD85EAD /* Pods-Walkies.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
