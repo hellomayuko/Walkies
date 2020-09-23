@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,9 @@
 		2C1C99D7251BBF6A00626DE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C1C99D6251BBF6A00626DE4 /* Assets.xcassets */; };
 		2C1C99DA251BBF6A00626DE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C1C99D8251BBF6A00626DE4 /* LaunchScreen.storyboard */; };
 		2C1C99E7251BC11300626DE4 /* WalkButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1C99E6251BC11300626DE4 /* WalkButton.swift */; };
+		2C220CE5251C0871008B3DBA /* can_we_go_walkies_soon.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2C220CE4251C0871008B3DBA /* can_we_go_walkies_soon.mp3 */; };
+		2C220CE8251C0876008B3DBA /* hey.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2C220CE7251C0876008B3DBA /* hey.mp3 */; };
+		2C220CEB251C09DF008B3DBA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2C220CEA251C09DF008B3DBA /* GoogleService-Info.plist */; };
 		2C244A27251BF83F0044268C /* i_really_need_to_go_outside.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2C244A22251BF83F0044268C /* i_really_need_to_go_outside.mp3 */; };
 		2C244A28251BF83F0044268C /* i_wanna_walkies.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2C244A23251BF83F0044268C /* i_wanna_walkies.mp3 */; };
 		2C244A29251BF83F0044268C /* walkies_now.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2C244A24251BF83F0044268C /* walkies_now.mp3 */; };
@@ -33,6 +36,9 @@
 		2C1C99D9251BBF6A00626DE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2C1C99DB251BBF6A00626DE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C1C99E6251BC11300626DE4 /* WalkButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkButton.swift; sourceTree = "<group>"; };
+		2C220CE4251C0871008B3DBA /* can_we_go_walkies_soon.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = can_we_go_walkies_soon.mp3; sourceTree = "<group>"; };
+		2C220CE7251C0876008B3DBA /* hey.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = hey.mp3; sourceTree = "<group>"; };
+		2C220CEA251C09DF008B3DBA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2C244A22251BF83F0044268C /* i_really_need_to_go_outside.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = i_really_need_to_go_outside.mp3; sourceTree = "<group>"; };
 		2C244A23251BF83F0044268C /* i_wanna_walkies.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = i_wanna_walkies.mp3; sourceTree = "<group>"; };
 		2C244A24251BF83F0044268C /* walkies_now.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = walkies_now.mp3; sourceTree = "<group>"; };
@@ -84,6 +90,7 @@
 				2C1C99D6251BBF6A00626DE4 /* Assets.xcassets */,
 				2C1C99D8251BBF6A00626DE4 /* LaunchScreen.storyboard */,
 				2C1C99DB251BBF6A00626DE4 /* Info.plist */,
+				2C220CEA251C09DF008B3DBA /* GoogleService-Info.plist */,
 			);
 			path = Walkies;
 			sourceTree = "<group>";
@@ -91,6 +98,8 @@
 		2C244A21251BF8360044268C /* Audio */ = {
 			isa = PBXGroup;
 			children = (
+				2C220CE7251C0876008B3DBA /* hey.mp3 */,
+				2C220CE4251C0871008B3DBA /* can_we_go_walkies_soon.mp3 */,
 				2C244A22251BF83F0044268C /* i_really_need_to_go_outside.mp3 */,
 				2C244A23251BF83F0044268C /* i_wanna_walkies.mp3 */,
 				2C244A24251BF83F0044268C /* walkies_now.mp3 */,
@@ -114,7 +123,6 @@
 				6ECB8FF37D96D01884CC5B70 /* Pods-Walkies.debug.xcconfig */,
 				2415E39A83DF3158AFD85EAD /* Pods-Walkies.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -179,10 +187,13 @@
 			files = (
 				2C244A29251BF83F0044268C /* walkies_now.mp3 in Resources */,
 				2C244A27251BF83F0044268C /* i_really_need_to_go_outside.mp3 in Resources */,
+				2C220CE5251C0871008B3DBA /* can_we_go_walkies_soon.mp3 in Resources */,
 				2C1C99DA251BBF6A00626DE4 /* LaunchScreen.storyboard in Resources */,
 				2C1C99D7251BBF6A00626DE4 /* Assets.xcassets in Resources */,
 				2C1C99D5251BBF6900626DE4 /* Main.storyboard in Resources */,
 				2C244A2B251BF83F0044268C /* wheres_my_walkies.mp3 in Resources */,
+				2C220CE8251C0876008B3DBA /* hey.mp3 in Resources */,
+				2C220CEB251C09DF008B3DBA /* GoogleService-Info.plist in Resources */,
 				2C244A28251BF83F0044268C /* i_wanna_walkies.mp3 in Resources */,
 				2C244A2A251BF83F0044268C /* walkies_please.mp3 in Resources */,
 			);
@@ -395,7 +406,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = mayuko.Walkies;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hellomayuko.walkies;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -415,7 +426,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = mayuko.Walkies;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hellomayuko.walkies;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

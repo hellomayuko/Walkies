@@ -7,6 +7,7 @@
 
 import UIKit
 import AVFoundation
+import Firebase
 
 class ViewController: UIViewController, AVAudioPlayerDelegate {
     
@@ -54,7 +55,17 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     }
     
     @objc private func didTapWalkies() {
-        let audioFileURL = URL(fileURLWithPath: Bundle.main.path(forResource: randomAudioFile(), ofType: "mp3")!)
+        let konaMumble = randomKonaMumble()
+        
+        playAudio(withURLString: konaMumble.1)
+        
+        var ref: DatabaseReference!
+        ref = Database.database().reference()
+        ref.child("walkies").childByAutoId().setValue(konaMumble.0)
+    }
+    
+    private func playAudio(withURLString audioURLString: String) {
+        let audioFileURL = URL(fileURLWithPath: Bundle.main.path(forResource: audioURLString, ofType: "mp3")!)
         
         do {
             avPlayer = try AVAudioPlayer(contentsOf: audioFileURL)
@@ -67,18 +78,20 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         }
     }
     
-    private func randomAudioFile() -> String {
-        let audioFiles = [
-            "i_really_need_to_go_outside",
-            "i_wanna_walkies",
-            "walkies_now",
-            "walkies_please",
-            "wheres_my_walkies"
+    private func randomKonaMumble() -> (String, String) {
+        let konasChat = [
+            ("I really need to go outside", "i_really_need_to_go_outside"),
+            ("I wanna walkies", "i_wanna_walkies"),
+            ("Walkies... NOW", "walkies_now"),
+            ("Walkies please!!", "walkies_please"),
+            ("Where's my walkies?", "wheres_my_walkies"),
+            ("HEY!", "hey"),
+            ("Can we go walkies soon?", "can_we_go_walkies_soon"),
         ]
         
-        let random = Int.random(in: 0..<5)
+        let random = Int.random(in: 0..<konasChat.count)
         
-        return audioFiles[random]
+        return konasChat[random]
     }
 }
 
