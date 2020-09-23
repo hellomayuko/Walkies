@@ -1,0 +1,378 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2C1C99CE251BBF6900626DE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1C99CD251BBF6900626DE4 /* AppDelegate.swift */; };
+		2C1C99D0251BBF6900626DE4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1C99CF251BBF6900626DE4 /* SceneDelegate.swift */; };
+		2C1C99D2251BBF6900626DE4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1C99D1251BBF6900626DE4 /* ViewController.swift */; };
+		2C1C99D5251BBF6900626DE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C1C99D3251BBF6900626DE4 /* Main.storyboard */; };
+		2C1C99D7251BBF6A00626DE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C1C99D6251BBF6A00626DE4 /* Assets.xcassets */; };
+		2C1C99DA251BBF6A00626DE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C1C99D8251BBF6A00626DE4 /* LaunchScreen.storyboard */; };
+		2C1C99E7251BC11300626DE4 /* WalkButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1C99E6251BC11300626DE4 /* WalkButton.swift */; };
+		2C244A27251BF83F0044268C /* i_really_need_to_go_outside.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2C244A22251BF83F0044268C /* i_really_need_to_go_outside.mp3 */; };
+		2C244A28251BF83F0044268C /* i_wanna_walkies.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2C244A23251BF83F0044268C /* i_wanna_walkies.mp3 */; };
+		2C244A29251BF83F0044268C /* walkies_now.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2C244A24251BF83F0044268C /* walkies_now.mp3 */; };
+		2C244A2A251BF83F0044268C /* walkies_please.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2C244A25251BF83F0044268C /* walkies_please.mp3 */; };
+		2C244A2B251BF83F0044268C /* wheres_my_walkies.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2C244A26251BF83F0044268C /* wheres_my_walkies.mp3 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2C1C99CA251BBF6900626DE4 /* Walkies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Walkies.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C1C99CD251BBF6900626DE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2C1C99CF251BBF6900626DE4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2C1C99D1251BBF6900626DE4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2C1C99D4251BBF6900626DE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2C1C99D6251BBF6A00626DE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2C1C99D9251BBF6A00626DE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2C1C99DB251BBF6A00626DE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C1C99E6251BC11300626DE4 /* WalkButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkButton.swift; sourceTree = "<group>"; };
+		2C244A22251BF83F0044268C /* i_really_need_to_go_outside.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = i_really_need_to_go_outside.mp3; sourceTree = "<group>"; };
+		2C244A23251BF83F0044268C /* i_wanna_walkies.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = i_wanna_walkies.mp3; sourceTree = "<group>"; };
+		2C244A24251BF83F0044268C /* walkies_now.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = walkies_now.mp3; sourceTree = "<group>"; };
+		2C244A25251BF83F0044268C /* walkies_please.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = walkies_please.mp3; sourceTree = "<group>"; };
+		2C244A26251BF83F0044268C /* wheres_my_walkies.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wheres_my_walkies.mp3; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2C1C99C7251BBF6900626DE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2C1C99C1251BBF6900626DE4 = {
+			isa = PBXGroup;
+			children = (
+				2C1C99CC251BBF6900626DE4 /* Walkies */,
+				2C1C99CB251BBF6900626DE4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2C1C99CB251BBF6900626DE4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2C1C99CA251BBF6900626DE4 /* Walkies.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2C1C99CC251BBF6900626DE4 /* Walkies */ = {
+			isa = PBXGroup;
+			children = (
+				2C244A21251BF8360044268C /* Audio */,
+				2C1C99CD251BBF6900626DE4 /* AppDelegate.swift */,
+				2C1C99CF251BBF6900626DE4 /* SceneDelegate.swift */,
+				2C1C99D1251BBF6900626DE4 /* ViewController.swift */,
+				2C1C99E6251BC11300626DE4 /* WalkButton.swift */,
+				2C1C99D3251BBF6900626DE4 /* Main.storyboard */,
+				2C1C99D6251BBF6A00626DE4 /* Assets.xcassets */,
+				2C1C99D8251BBF6A00626DE4 /* LaunchScreen.storyboard */,
+				2C1C99DB251BBF6A00626DE4 /* Info.plist */,
+			);
+			path = Walkies;
+			sourceTree = "<group>";
+		};
+		2C244A21251BF8360044268C /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				2C244A22251BF83F0044268C /* i_really_need_to_go_outside.mp3 */,
+				2C244A23251BF83F0044268C /* i_wanna_walkies.mp3 */,
+				2C244A24251BF83F0044268C /* walkies_now.mp3 */,
+				2C244A25251BF83F0044268C /* walkies_please.mp3 */,
+				2C244A26251BF83F0044268C /* wheres_my_walkies.mp3 */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2C1C99C9251BBF6900626DE4 /* Walkies */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C1C99DE251BBF6A00626DE4 /* Build configuration list for PBXNativeTarget "Walkies" */;
+			buildPhases = (
+				2C1C99C6251BBF6900626DE4 /* Sources */,
+				2C1C99C7251BBF6900626DE4 /* Frameworks */,
+				2C1C99C8251BBF6900626DE4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Walkies;
+			productName = Walkies;
+			productReference = 2C1C99CA251BBF6900626DE4 /* Walkies.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2C1C99C2251BBF6900626DE4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					2C1C99C9251BBF6900626DE4 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+				};
+			};
+			buildConfigurationList = 2C1C99C5251BBF6900626DE4 /* Build configuration list for PBXProject "Walkies" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2C1C99C1251BBF6900626DE4;
+			productRefGroup = 2C1C99CB251BBF6900626DE4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2C1C99C9251BBF6900626DE4 /* Walkies */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2C1C99C8251BBF6900626DE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C244A29251BF83F0044268C /* walkies_now.mp3 in Resources */,
+				2C244A27251BF83F0044268C /* i_really_need_to_go_outside.mp3 in Resources */,
+				2C1C99DA251BBF6A00626DE4 /* LaunchScreen.storyboard in Resources */,
+				2C1C99D7251BBF6A00626DE4 /* Assets.xcassets in Resources */,
+				2C1C99D5251BBF6900626DE4 /* Main.storyboard in Resources */,
+				2C244A2B251BF83F0044268C /* wheres_my_walkies.mp3 in Resources */,
+				2C244A28251BF83F0044268C /* i_wanna_walkies.mp3 in Resources */,
+				2C244A2A251BF83F0044268C /* walkies_please.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2C1C99C6251BBF6900626DE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C1C99D2251BBF6900626DE4 /* ViewController.swift in Sources */,
+				2C1C99CE251BBF6900626DE4 /* AppDelegate.swift in Sources */,
+				2C1C99D0251BBF6900626DE4 /* SceneDelegate.swift in Sources */,
+				2C1C99E7251BC11300626DE4 /* WalkButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2C1C99D3251BBF6900626DE4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C1C99D4251BBF6900626DE4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2C1C99D8251BBF6A00626DE4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C1C99D9251BBF6A00626DE4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2C1C99DC251BBF6A00626DE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2C1C99DD251BBF6A00626DE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2C1C99DF251BBF6A00626DE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7WAJL23XEW;
+				INFOPLIST_FILE = Walkies/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mayuko.Walkies;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2C1C99E0251BBF6A00626DE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7WAJL23XEW;
+				INFOPLIST_FILE = Walkies/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mayuko.Walkies;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2C1C99C5251BBF6900626DE4 /* Build configuration list for PBXProject "Walkies" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C1C99DC251BBF6A00626DE4 /* Debug */,
+				2C1C99DD251BBF6A00626DE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C1C99DE251BBF6A00626DE4 /* Build configuration list for PBXNativeTarget "Walkies" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C1C99DF251BBF6A00626DE4 /* Debug */,
+				2C1C99E0251BBF6A00626DE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2C1C99C2251BBF6900626DE4 /* Project object */;
+}
