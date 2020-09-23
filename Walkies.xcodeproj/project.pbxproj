@@ -129,6 +129,7 @@
 				2C1C99C6251BBF6900626DE4 /* Sources */,
 				2C1C99C7251BBF6900626DE4 /* Frameworks */,
 				2C1C99C8251BBF6900626DE4 /* Resources */,
+				352AAE0B71DEE1F7539106C6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -190,6 +191,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		352AAE0B71DEE1F7539106C6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Walkies/Pods-Walkies-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Walkies/Pods-Walkies-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Walkies/Pods-Walkies-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		CB6862CB8C4CCA9C1C87BA4E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

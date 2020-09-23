@@ -6,5 +6,9 @@ target 'Walkies' do
   use_frameworks!
 
   # Pods for Walkies
+  
+  # add pods for desired Firebase products
+  # https://firebase.google.com/docs/ios/setup#available-pods
+  pod 'Firebase/Database'
 
 end
