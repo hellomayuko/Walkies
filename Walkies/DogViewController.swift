@@ -9,7 +9,7 @@ import UIKit
 import AVFoundation
 import Firebase
 
-class ViewController: UIViewController, AVAudioPlayerDelegate {
+class DogViewController: UIViewController, AVAudioPlayerDelegate {
     
     // This time, we'll declare avPlayer as an instance variable,
       // which means it exists as long as our view controller exists.
@@ -55,13 +55,20 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     }
     
     @objc private func didTapWalkies() {
-        let konaMumble = randomKonaMumble()
+        let konaWalks = KonasWalkies()
         
-        playAudio(withURLString: konaMumble.1)
+        let walkType = konaWalks.randomWalkiesType()
+        
+        playAudio(withURLString: walkType.audioFile)
         
         var ref: DatabaseReference!
         ref = Database.database().reference()
-        ref.child("walkies").childByAutoId().setValue(konaMumble.0)
+        let data : [String: Any] = [
+            "id": walkType.id,
+            "timestamp": Date().timeIntervalSince1970,
+            "mumble": walkType.mumble
+        ]
+        ref.child("walkies").childByAutoId().setValue(data)
     }
     
     private func playAudio(withURLString audioURLString: String) {
@@ -76,22 +83,6 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         catch {
             print("error playing")
         }
-    }
-    
-    private func randomKonaMumble() -> (String, String) {
-        let konasChat = [
-            ("I really need to go outside", "i_really_need_to_go_outside"),
-            ("I wanna walkies", "i_wanna_walkies"),
-            ("Walkies... NOW", "walkies_now"),
-            ("Walkies please!!", "walkies_please"),
-            ("Where's my walkies?", "wheres_my_walkies"),
-            ("HEY!", "hey"),
-            ("Can we go walkies soon?", "can_we_go_walkies_soon"),
-        ]
-        
-        let random = Int.random(in: 0..<konasChat.count)
-        
-        return konasChat[random]
     }
 }
 

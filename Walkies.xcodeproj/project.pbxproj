@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C13CD57251D1A1900678D23 /* WalkiesFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C13CD56251D1A1900678D23 /* WalkiesFetcher.swift */; };
+		2C13CD5A251D256000678D23 /* KonasWalkies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C13CD59251D256000678D23 /* KonasWalkies.swift */; };
 		2C1C99CE251BBF6900626DE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1C99CD251BBF6900626DE4 /* AppDelegate.swift */; };
 		2C1C99D0251BBF6900626DE4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1C99CF251BBF6900626DE4 /* SceneDelegate.swift */; };
-		2C1C99D2251BBF6900626DE4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1C99D1251BBF6900626DE4 /* ViewController.swift */; };
+		2C1C99D2251BBF6900626DE4 /* DogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1C99D1251BBF6900626DE4 /* DogViewController.swift */; };
 		2C1C99D5251BBF6900626DE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C1C99D3251BBF6900626DE4 /* Main.storyboard */; };
 		2C1C99D7251BBF6A00626DE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C1C99D6251BBF6A00626DE4 /* Assets.xcassets */; };
 		2C1C99DA251BBF6A00626DE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C1C99D8251BBF6A00626DE4 /* LaunchScreen.storyboard */; };
@@ -17,20 +19,24 @@
 		2C220CE5251C0871008B3DBA /* can_we_go_walkies_soon.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2C220CE4251C0871008B3DBA /* can_we_go_walkies_soon.mp3 */; };
 		2C220CE8251C0876008B3DBA /* hey.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2C220CE7251C0876008B3DBA /* hey.mp3 */; };
 		2C220CEB251C09DF008B3DBA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2C220CEA251C09DF008B3DBA /* GoogleService-Info.plist */; };
+		2C220CF4251C0D8D008B3DBA /* HoomanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C220CF3251C0D8D008B3DBA /* HoomanView.swift */; };
 		2C244A27251BF83F0044268C /* i_really_need_to_go_outside.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2C244A22251BF83F0044268C /* i_really_need_to_go_outside.mp3 */; };
 		2C244A28251BF83F0044268C /* i_wanna_walkies.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2C244A23251BF83F0044268C /* i_wanna_walkies.mp3 */; };
 		2C244A29251BF83F0044268C /* walkies_now.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2C244A24251BF83F0044268C /* walkies_now.mp3 */; };
 		2C244A2A251BF83F0044268C /* walkies_please.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2C244A25251BF83F0044268C /* walkies_please.mp3 */; };
 		2C244A2B251BF83F0044268C /* wheres_my_walkies.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2C244A26251BF83F0044268C /* wheres_my_walkies.mp3 */; };
+		2C62462B251D441300B082F2 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C62462A251D441300B082F2 /* Date.swift */; };
 		C48325013D2EA7590A1D56EE /* Pods_Walkies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAB5C5C2ED550F236B4DAF69 /* Pods_Walkies.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2415E39A83DF3158AFD85EAD /* Pods-Walkies.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Walkies.release.xcconfig"; path = "Target Support Files/Pods-Walkies/Pods-Walkies.release.xcconfig"; sourceTree = "<group>"; };
+		2C13CD56251D1A1900678D23 /* WalkiesFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkiesFetcher.swift; sourceTree = "<group>"; };
+		2C13CD59251D256000678D23 /* KonasWalkies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KonasWalkies.swift; sourceTree = "<group>"; };
 		2C1C99CA251BBF6900626DE4 /* Walkies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Walkies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C1C99CD251BBF6900626DE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C1C99CF251BBF6900626DE4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2C1C99D1251BBF6900626DE4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2C1C99D1251BBF6900626DE4 /* DogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogViewController.swift; sourceTree = "<group>"; };
 		2C1C99D4251BBF6900626DE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2C1C99D6251BBF6A00626DE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C1C99D9251BBF6A00626DE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -39,11 +45,13 @@
 		2C220CE4251C0871008B3DBA /* can_we_go_walkies_soon.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = can_we_go_walkies_soon.mp3; sourceTree = "<group>"; };
 		2C220CE7251C0876008B3DBA /* hey.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = hey.mp3; sourceTree = "<group>"; };
 		2C220CEA251C09DF008B3DBA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2C220CF3251C0D8D008B3DBA /* HoomanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoomanView.swift; sourceTree = "<group>"; };
 		2C244A22251BF83F0044268C /* i_really_need_to_go_outside.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = i_really_need_to_go_outside.mp3; sourceTree = "<group>"; };
 		2C244A23251BF83F0044268C /* i_wanna_walkies.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = i_wanna_walkies.mp3; sourceTree = "<group>"; };
 		2C244A24251BF83F0044268C /* walkies_now.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = walkies_now.mp3; sourceTree = "<group>"; };
 		2C244A25251BF83F0044268C /* walkies_please.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = walkies_please.mp3; sourceTree = "<group>"; };
 		2C244A26251BF83F0044268C /* wheres_my_walkies.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wheres_my_walkies.mp3; sourceTree = "<group>"; };
+		2C62462A251D441300B082F2 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		6ECB8FF37D96D01884CC5B70 /* Pods-Walkies.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Walkies.debug.xcconfig"; path = "Target Support Files/Pods-Walkies/Pods-Walkies.debug.xcconfig"; sourceTree = "<group>"; };
 		AAB5C5C2ED550F236B4DAF69 /* Pods_Walkies.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Walkies.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -84,13 +92,17 @@
 				2C244A21251BF8360044268C /* Audio */,
 				2C1C99CD251BBF6900626DE4 /* AppDelegate.swift */,
 				2C1C99CF251BBF6900626DE4 /* SceneDelegate.swift */,
-				2C1C99D1251BBF6900626DE4 /* ViewController.swift */,
+				2C1C99D1251BBF6900626DE4 /* DogViewController.swift */,
+				2C220CF3251C0D8D008B3DBA /* HoomanView.swift */,
 				2C1C99E6251BC11300626DE4 /* WalkButton.swift */,
 				2C1C99D3251BBF6900626DE4 /* Main.storyboard */,
 				2C1C99D6251BBF6A00626DE4 /* Assets.xcassets */,
 				2C1C99D8251BBF6A00626DE4 /* LaunchScreen.storyboard */,
 				2C1C99DB251BBF6A00626DE4 /* Info.plist */,
 				2C220CEA251C09DF008B3DBA /* GoogleService-Info.plist */,
+				2C13CD56251D1A1900678D23 /* WalkiesFetcher.swift */,
+				2C13CD59251D256000678D23 /* KonasWalkies.swift */,
+				2C62462A251D441300B082F2 /* Date.swift */,
 			);
 			path = Walkies;
 			sourceTree = "<group>";
@@ -248,8 +260,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C1C99D2251BBF6900626DE4 /* ViewController.swift in Sources */,
+				2C13CD57251D1A1900678D23 /* WalkiesFetcher.swift in Sources */,
+				2C220CF4251C0D8D008B3DBA /* HoomanView.swift in Sources */,
+				2C1C99D2251BBF6900626DE4 /* DogViewController.swift in Sources */,
+				2C62462B251D441300B082F2 /* Date.swift in Sources */,
 				2C1C99CE251BBF6900626DE4 /* AppDelegate.swift in Sources */,
+				2C13CD5A251D256000678D23 /* KonasWalkies.swift in Sources */,
 				2C1C99D0251BBF6900626DE4 /* SceneDelegate.swift in Sources */,
 				2C1C99E7251BC11300626DE4 /* WalkButton.swift in Sources */,
 			);

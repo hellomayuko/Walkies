@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftUI
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -19,7 +20,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
 
         let window = UIWindow(windowScene: windowScene)
-        window.rootViewController = ViewController()
+        
+        if UIDevice.current.userInterfaceIdiom == .phone {
+            var contentView = HoomanView()
+            window.rootViewController = UIHostingController(rootView: contentView)
+        } else {
+            window.rootViewController = DogViewController()
+        }
+        
 
         self.window = window
         window.makeKeyAndVisible()
