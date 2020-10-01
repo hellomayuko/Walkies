@@ -12,11 +12,6 @@ import Firebase
 struct HoomanView: View {
     
     @ObservedObject var walkiesFetcher = WalkiesFetcher()
-        
-        // Listen for new comments in the Firebase database
-//        ref.observe(.childAdded, with: { (snapshot) -> Void in
-//          self.walkiesRequests.append(snapshot)
-//        })
     
     var body: some View {
         VStack {
